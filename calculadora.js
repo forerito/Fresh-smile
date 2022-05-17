@@ -8,9 +8,6 @@ document.getElementById("display").value = 0;
 var cantidad = "";
 var sumatoria = 0;
 var sumar = false;
-var leer = true;
-var op = "";
-var oper = false;
 var restar = false;
 var multiplicar = false;
 var dividir = false;
@@ -39,7 +36,7 @@ function mostrar_numeros(numero) {
 // }
 
 // function multiplicacion() {
-//     if (contadorMulti == 0) {
+//     if (contador == 0) {
 //         sumatoria = sumatoria + parseInt(cantidad);
 //     } else {
 //         sumatoria = document.getElementById("display").value;
@@ -48,7 +45,7 @@ function mostrar_numeros(numero) {
 //     cantidad = "";
 //     console.log(sumatoria);
 //     multiplicar=true;
-//     contadorMulti++;
+//     contador++;
 // }
 
 // function division() {
@@ -165,15 +162,5 @@ function borrar() {
     // cantidad = "";
     document.getElementById("display").value = ("0");
     (cantidad = "");
-}
-
-function punto() {
-    if (document.getElementById("display").value.indexOf(".") >= 0 && (!leer || op != "") && !oper) {} else
-    if (leer)
-        document.getElementById("display").value += ".";
-    else {
-        document.getElementById("display").value = "0.";
-        leer = true;
-    }
 }
 
