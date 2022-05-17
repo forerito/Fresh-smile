@@ -43,7 +43,6 @@ function mostrar_numeros(numero) {
 //     }
 //     document.getElementById("display").value = sumatoria;
 //     cantidad = "";
-//     console.log(sumatoria);
 //     multiplicar=true;
 //     contador++;
 // }
@@ -162,5 +161,15 @@ function borrar() {
     // cantidad = "";
     document.getElementById("display").value = ("0");
     (cantidad = "");
+}
+
+function punto() {
+    if (document.getElementById("display").value.indexOf(".") >= 0 && (!leer || op != "") && !oper) {} else
+    if (leer)
+        document.getElementById("display").value += ".";
+    else {
+        document.getElementById("display").value = "0.";
+        leer = true;
+    }
 }
 
